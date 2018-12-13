@@ -34,7 +34,6 @@ typedef void(^playFinshBlock)(void); //播放完毕的Block
 
 //block回调播放完成的初始化方式
 -(instancetype)initWith:(NSString *)filePath delegate:(id<FYPlayerDelegate>)delegate playerSourceTag:(NSInteger)playerSourceTag playFinshed:(playFinshBlock)playFinshed;
-
 /// 开始播放单曲
 - (void)playerStart:(NSString *)filePath;
 
@@ -52,7 +51,6 @@ typedef void(^playFinshBlock)(void); //播放完毕的Block
 -(void)stop;
 //跳转进度
 -(void)seekToTimeWith:(CGFloat)value;
-
 /**
  获取总时长
  */
